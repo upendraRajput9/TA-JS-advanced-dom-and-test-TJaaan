@@ -1,0 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    line-height: 1.5;
+    background-color: #F1DEB8;
+}
+html{
+    font-size: 16px;
+}
+h1{
+    font-size: 2rem;
+    display: flex;
+     justify-content: center;
+}
+
+.container{
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+.form{
+    display: flex;
+    justify-content: center;
+   width: 100%;
+    flex-direction: column;
+   margin-top: 15rem;
+   padding-bottom: 5rem;
+    
+ 
+    
+}
+input{
+    padding: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+div{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+article{
+    background-color: tomato;
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    padding: 1.3rem;
+    margin: 1rem;
+    border: .18rem solid black;
+  
+}
+p{
+    font-size: 2.4rem;
+}
+p:focus{
+    background-color: white;
+    color: black;
+    border: .1rem solid blue;
+}
+
+a{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+a:focus{
+    background-color: white;
+    color: black;
+    border: .1rem solid blue;
+}
+
+input[type=submit]{
+    background-color: black;
+    color: white;
+}
