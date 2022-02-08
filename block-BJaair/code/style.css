@@ -54,7 +54,7 @@ table {
 
 body{
     line-height: 1.5;
-    background-color: #F1DEB8;
+    background-color: #b8d7f1;
 }
 html{
     font-size: 16px;
@@ -76,32 +76,34 @@ header{
     background-color: black;
     color: white;
 }
-.form{
+form{
     display: flex;
-    justify-content: center;
-   width: 100%;
+    padding: 3rem 0 0 0;
+   width: 60%;
     flex-direction: column;
    margin-top: 15rem;
    padding-bottom: 5rem;
-    
- 
+   align-items: center;
+ border: 1rem solid rgb(15, 4, 95);
+ border-radius: 2rem 0 ;
     
 }
 input{
     padding: 1rem;
     margin-bottom: 1rem;
-   
+   width: 70%;
 }
 
-div{
+ul{
     display: flex;
     justify-content: flex-start;
     width: 100%;
     flex-wrap: wrap;
     
 }
-article{
-    background-color: tomato;
+li{
+    background-color: rgb(30, 101, 160);
+    color: rgb(211, 255, 205);
     display: flex;
     width: 25%;
     flex-direction: column;
@@ -110,26 +112,33 @@ article{
     border: .18rem solid black;
   
 }
-p{
+h2{
     font-size: 2.4rem;
+}
+h2:focus{
+    background-color: white;
+    color: black;
+    border: .1rem solid blue;
+}
+
+p{
+    font-size: 1.5rem;
+    text-decoration: underline;
 }
 p:focus{
     background-color: white;
     color: black;
     border: .1rem solid blue;
 }
-
-a{
-    font-size: 1.5rem;
-    text-decoration: underline;
+section{
+    display: flex;
+    justify-content: center;
 }
-a:focus{
-    background-color: white;
-    color: black;
-    border: .1rem solid blue;
-}
-
-input[type=submit]{
-    background-color: black;
+button[type=submit]{
+    background-color: rgb(10, 38, 61);
     color: white;
+    width: 70%;
+    padding:0.5rem 0;
+    border: none;
+    border-radius: 3px;
 }
