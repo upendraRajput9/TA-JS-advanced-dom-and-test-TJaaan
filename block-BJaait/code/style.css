@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* custom */
+body{
+    font-family: 'Rajdhani', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* variables */
+.root{
+    --Primary:rgb(89,191,194);
+    --Secondary: white;
+    --text-dark:rgb(40,62,125);
+    --bg-light:rgb(213,229,229);
+    --text-light:rgb(110,113,120);
+}
+/* general classes */
+.center{
+    text-align: center;
+}
+
+.margin{
+    margin: 1rem;
+}
+
+.padding{
+    padding: 1rem;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.btn{
+    display: inline-block;
+    padding: 16px;
+    color: var(---Secondary);
+    background-color: var(---Primary);
+}
+/* flex */
+body{
+    background-color: rgb(40,115,247);
+    font-family: 'Ubuntu', sans-serif;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.justify-end{
+    justify-content: end;
+}
+
+.display-flex{
+    display: flex;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-45{
+    flex: 0 1 45%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+h1{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+input{
+    border: none;
+    background-color: rgb(40,115,247);
+   width: 80%;
+   font-size: 1.4rem;
+   color: white;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    color: white;
+    font-size: 1rem;
+    
+}
+button{
+    border: none;
+    background-color: rgb(40,115,247);
+    color: white;
+    font-size: 2rem;
+
+
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+form{
+    background-color: rgb(40,115,247);
+    border: 2px solid white;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+main{
+    display: flex;
+ flex-direction: column;
+    align-items: center;
+   gap: 1.5rem;
+}
+ul{
+    width: 30%;
+    display: grid;
+    grid-row-gap: 1rem;
+}
+li{
+    background-color: white;
+    color: rgb(40,115,247);
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    font-weight: 900;
+    cursor: move;
+}
