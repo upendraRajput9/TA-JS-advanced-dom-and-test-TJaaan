@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    line-height: 1.5;
+    background-color: #b8d7f1;
+}
+html{
+    font-size: 16px;
+}
+h1{
+    font-size: 2rem;
+    display: flex;
+     justify-content: center;
+}
+
+.container{
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+form{
+    display: flex;
+    padding: 3rem 0 0 0;
+   width: 60%;
+    flex-direction: column;
+   margin-top: 15rem;
+   padding-bottom: 5rem;
+   align-items: center;
+ border: 1rem solid rgb(15, 4, 95);
+ border-radius: 2rem 0 ;
+    
+}
+input{
+    padding: 1rem;
+    margin-bottom: 1rem;
+   width: 70%;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+li{
+    background-color: rgb(30, 101, 160);
+    color: rgb(211, 255, 205);
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    padding: 1.3rem;
+    margin: 1rem;
+    border: .18rem solid black;
+  
+}
+h2{
+    font-size: 2.4rem;
+}
+h2:focus{
+    background-color: white;
+    color: black;
+    border: .1rem solid blue;
+}
+
+p{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+p:focus{
+    background-color: white;
+    color: black;
+    border: .1rem solid blue;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+button[type=submit]{
+    background-color: rgb(10, 38, 61);
+    color: white;
+    width: 70%;
+    padding:0.5rem 0;
+    border: none;
+    border-radius: 3px;
+}
