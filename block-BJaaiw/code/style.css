@@ -1,0 +1,14 @@
+#myCanvas{
+    background-color: rgb(219, 185, 250);
+    border: 4px solid rgb(255, 49, 49);
+    border-radius: 1rem;
+}
+body{
+    background-color: rgb(37,9,53);   
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(219, 185, 250);
+}
