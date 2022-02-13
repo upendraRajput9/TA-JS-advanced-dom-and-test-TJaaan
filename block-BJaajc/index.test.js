@@ -1,25 +1,23 @@
 const {
     getFullName,
-    isPalindrome,
+    isPalindome,
     getCircumfrence,
     getArea
 } = require(`./index`);
 
-test(`add firstName + lastName to equal fullName`, ()=>{
-expect(getFullName(`Arya`,`qui`)).toBe(`Arya qui`)
-});
-test(``, ()=>{
-    expect(isPalindrome(`Arya`)).toBe(true)
-    });
-    test(`add firstName + lastName to equal fullName`, ()=>{
-        expect(isPalindrome(`Arya`)).toBe(true)
-        });
-        test(`add firstName + lastName to equal fullName`, ()=>{
-            expect(getCircumfrence(`Arya`)).toBe(true)
-            });
-            test(`add firstName + lastName to equal fullName`, ()=>{
-                expect(getCircumfrence(`Arya`)).toBe(true)
-                });
-                test(`add firstName + lastName to equal fullName`, ()=>{
-                    expect(getArea(`Arya`)).toBe(true)
-                    });
+test('test for full name', () => {
+    expect(getFullName('alt', 'campus')).toBe('alt campus');
+    expect(getFullName('alt', 'campus')).not.toBe('altcampus');
+    expect(getFullName('bharat', 'babu')).not.toBe('bharatbabu');
+  });
+  
+
+  
+  test('test for palindome', () => {
+    expect(isPalindome('wow')).toBe(true);
+    expect(isPalindome('tat')).toBe(true);
+    expect(isPalindome('gag')).toBe(true);
+    expect(isPalindome('campus')).not.toBe(true);
+    expect(isPalindome('babu')).not.toBe(true);
+    expect(isPalindome('bharat')).not.toBe(true);
+  });

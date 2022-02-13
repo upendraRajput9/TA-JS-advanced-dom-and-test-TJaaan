@@ -1,10 +1,10 @@
 {
-  "name": "altcampus-assignment",
-  "version": "1.0.0",
-  "description": "",
-  "main": "",
+    "name": "altcampus-assignment",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "jest --passWithNoTests"
   },
   "author": "AltCampus",
   "license": "GNU GPL V3",
