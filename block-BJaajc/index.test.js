@@ -8,7 +8,7 @@ const {
 test(`add firstName + lastName to equal fullName`, ()=>{
 expect(getFullName(`Arya`,`qui`)).toBe(`Arya qui`)
 });
-test(`add firstName + lastName to equal fullName`, ()=>{
+test(``, ()=>{
     expect(isPalindrome(`Arya`)).toBe(true)
     });
     test(`add firstName + lastName to equal fullName`, ()=>{
