@@ -1,25 +1,26 @@
 function getFullName(firstName, lastName) {
-  return `${firstName} ${lastName}`
-}
-
-function isPalindome(word) {
+    return `${firstName} ${lastName}`;
+  }
+  
+  function isPalindome(word) {
     let newWord = word.split('').reverse().join('');
     if (newWord === word) {
       return true;
     }
     return false;
   }
-
-function getCircumfrence(radius){
-    return 2*22/7*radius
-}
-
-function getArea(){
-   return 22/7*radius**2
-}
-module.exports={
+  
+  function getCircumference(radius) {
+    return `The circumference is ${2 * Math.PI * radius}`;
+  }
+  
+  function getArea(radius) {
+    return `The area is ${Math.PI * radius * radius}`;
+  }
+  
+  module.exports = {
     getFullName,
+    getCircumference,
+    getArea,
     isPalindome,
-    getCircumfrence,
-    getArea
-}
+  };
